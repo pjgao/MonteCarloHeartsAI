@@ -14,10 +14,10 @@
    history_C:      同deck列表，玩家C已出的牌  
    history_P0:     列表，每个回合第一个发牌的人的index。当前玩家:0, A:1, B:2, C:3
                     如：history_P0 = [0,1,1]表示第一回合是当前玩家先出的牌，第二回合玩家1先出的牌，第三回合还是玩家1先出的牌
-   
+
    ____output:  
    out_card: Card类型，选定的一张牌
-   
+
 5. 使用时需要导入的文件
     ```
     import collections
@@ -27,8 +27,8 @@
 6. 当前每次运行时间为1s，可在Variables.py中修改该变量monteCarloTime
 7. 可运行gameTest.py测试，该示例采用了1个MonteCarloPlay和3个规则玩家。
 8. 对gameTest做5000次模拟测试的得分情况：  
-   ![](img/allScore.png)  
-   ![](img/box.png)
-9.  提升点：
+   ![](./img/allScore.png)  
+   ![](./img/box.png)
+9. 提升点：
     1. MonteCarlo模拟中的选择的三个玩家的策略可以改进(在Player模块中添加不同的策略供play函数调用)
     2. 优化损失函数，在得分情况中优化全红的损失，一旦发现某些步骤效果差时就终止分裂
